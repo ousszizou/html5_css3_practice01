@@ -1,0 +1,529 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+:root {
+  --body-bg-color: #f2f2f2;
+  --main-color: #993333;
+  --white-color: #fff;
+  --text-grey-color: #666666;
+  --main-color-btn-hover: #ec4949;
+  --primary-price-color: #009999;
+  --primary-price-color-hover: #24d4d4;
+}
+
+body {
+  background-color: var(--body-bg-color);
+}
+
+.container {
+  margin: 30px auto 0;
+  width: 90%;
+}
+
+/* ========== START HEADER STYLING ========== */
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+header section {
+  width: 100%;
+  display: flex;
+  height: 400px;
+}
+
+header section div {
+  width: 50%;
+}
+
+/* ===== START SECTION 1 STYLING ===== */
+header .section1 .s1-brand,
+header .section1 .s1-brand-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .section1 .s1-brand {
+  background-color: var(--main-color);
+}
+
+header .section1 .s1-brand h1 {
+  font-size: 60px;
+  color: var(--white-color);
+}
+
+header .section1 .s1-brand-more {
+  background-color: var(--white-color);
+  padding: 0 70px;
+}
+
+header .section1 .s1-brand-more p {
+  color: var(--text-grey-color);
+  font-size: 22px;
+  line-height: 1.8;
+  font-style: italic;
+}
+/* ===== END SECTION 1 STYLING ===== */
+
+/* ===== START SECTION 2 STYLING ===== */
+header .section2 .s2-leftSide,
+header .section2 .s2-rightSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 70px;
+}
+
+header .section2 .s2-leftSide {
+  background: var(--white-color);
+  align-items: flex-start;
+}
+
+header .section2 .s2-leftSide h2 {
+  font-weight: 400;
+  font-size: 30px;
+  color: var(--main-color);
+  margin-bottom: 25px;
+}
+
+header .section2 .s2-leftSide p {
+  line-height: 1.8;
+  color: var(--text-grey-color);
+  font-size: 18px;
+}
+
+header .section2 .s2-leftSide a {
+  align-self: flex-end;
+  background: var(--main-color);
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 15px 40px;
+  margin-top: 15px;
+  transition: 0.4s all;
+  text-transform: uppercase;
+}
+
+header .section2 .s2-leftSide a:hover {
+  background: var(--main-color-btn-hover);
+}
+
+header .section2 .s2-rightSide {
+  background: var(--main-color);
+  color: var(--white-color);
+  align-items: center;
+}
+
+header .section2 .s2-rightSide img {
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+header .section2 .s2-rightSide p {
+  font-size: 14px;
+  padding: 0 35px;
+  font-weight: 100;
+  line-height: 1.8;
+}
+
+/* ===== END SECTION 2 STYLING ===== */
+
+/* ===== START SECTION 3 STYLING ===== */
+
+header .section3 .s3-leftSide img {
+  width: 100%;
+  height: 100%;
+}
+
+header .section3 .s3-rightSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 70px;
+  background: var(--white-color);
+}
+
+header .section3 .s3-rightSide h2 {
+  font-weight: 400;
+  font-size: 30px;
+  color: var(--text-grey-color);
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+header .section3 .s3-rightSide p {
+  line-height: 1.8;
+  color: var(--text-grey-color);
+  font-size: 18px;
+}
+
+header .section3 .s3-rightSide a:not(.s3-rightSide-more) {
+  align-self: center;
+  background: var(--main-color);
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 15px 40px;
+  margin-top: 15px;
+  transition: 0.4s all;
+  text-transform: uppercase;
+}
+
+header .section3 .s3-rightSide a:not(.s3-rightSide-more):hover {
+  background: var(--main-color-btn-hover);
+}
+
+header .section3 .s3-rightSide .s3-rightSide-more {
+  text-decoration: none;
+  color: #007bff;
+}
+
+header .section3 .s3-rightSide .s3-rightSide-more:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+/* ===== END SECTION 3 STYLING ===== */
+
+/* ========== END HEADER STYLING ========== */
+
+/* ========== START SECTION2 STYLING ========== */
+
+.section-2 {
+  display: flex;
+  margin-top: 30px;
+  background-color: var(--white-color);
+}
+
+.section-2 .s2-left {
+  width: 65%;
+  margin: 60px;
+}
+
+.section-2 .s2-left h2 {
+  font-weight: 400;
+  font-size: 30px;
+  color: var(--main-color);
+  margin-bottom: 25px;
+}
+
+.section-2 .s2-left p {
+  line-height: 1.8;
+  color: var(--text-grey-color);
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.section-2 .s2-left a {
+  float: right;
+  background: var(--main-color);
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 15px 40px;
+  margin-top: 15px;
+  transition: 0.4s all;
+  text-transform: uppercase;
+}
+
+.section-2 .s2-left a:hover {
+  background: var(--main-color-btn-hover);
+}
+
+.section-2 .s2-right {
+  width: 35%;
+}
+
+.section-2 .s2-right img {
+  width: 100%;
+  height: 100%;
+}
+
+/* ========== END SECTION2 STYLING ========== */
+
+/* ========== START SECTION3 STYLING ========== */
+.section-3 {
+  margin-top: 30px;
+  display: flex;
+  background-color: var(--white-color);
+}
+
+.section-3 .s3-left {
+  width: 35%;
+}
+
+.section-3 .s3-left > img {
+  width: 100%;
+  height: 100%;
+}
+
+.section-3 .s3-right {
+  display: flex;
+  align-self: center;
+  width: 65%;
+  padding: 25px;
+}
+
+.section-3 .s3-right .s3-right-sp,
+.section-3 .s3-right .s3-right-ap {
+  width: 50%;
+}
+
+.section-3 .s3-right .s3-right-sp {
+  margin: 0 25px 0 20px;
+}
+
+.section-3 .s3-right .s3-right-ap {
+  margin: 0 20px 0 25px;
+}
+
+.section-3 .s3-right .s3-right-sp > .s3-right-sp-header,
+.section-3 .s3-right .s3-right-ap > .s3-right-ap-header {
+  background: var(--primary-price-color);
+  color: white;
+  text-align: center;
+  padding: 40px 0;
+  font-weight: 300;
+}
+
+.section-3
+  .s3-right
+  .s3-right-sp
+  > .s3-right-sp-header
+  .s3-right-sp-header-title,
+.section-3
+  .s3-right
+  .s3-right-ap
+  > .s3-right-ap-header
+  .s3-right-ap-header-title {
+  font-size: 26px;
+}
+
+.section-3
+  .s3-right
+  .s3-right-sp
+  > .s3-right-sp-header
+  .s3-right-sp-header-price,
+.section-3
+  .s3-right
+  .s3-right-ap
+  > .s3-right-ap-header
+  .s3-right-ap-header-price {
+  font-size: 18px;
+}
+
+.section-3 .s3-right .s3-right-sp > .s3-right-sp-body,
+.section-3 .s3-right .s3-right-ap > .s3-right-ap-body {
+  border: 1px solid var(--primary-price-color);
+  padding: 30px 45px;
+  width: 100%;
+}
+
+.section-3 .s3-right .s3-right-sp > .s3-right-sp-body > ul,
+.section-3 .s3-right .s3-right-ap > .s3-right-ap-body > ul {
+  list-style-type: none;
+  font-size: 18px;
+  color: var(--text-grey-color);
+}
+
+.section-3 .s3-right .s3-right-sp > .s3-right-sp-body > ul li,
+.section-3 .s3-right .s3-right-ap > .s3-right-ap-body > ul li {
+  margin: 25px 0;
+}
+
+.section-3 .s3-right .s3-right-sp > .s3-right-sp-body a,
+.section-3 .s3-right .s3-right-ap > .s3-right-ap-body a {
+  text-align: center;
+  width: 80%;
+  background: var(--primary-price-color);
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 15px 0;
+  font-weight: 300;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+
+.section-3 .s3-right .s3-right-sp > .s3-right-sp-body a:hover,
+.section-3 .s3-right .s3-right-ap > .s3-right-ap-body a:hover {
+  background-color: var(--primary-price-color-hover);
+}
+
+/* ========== END SECTION3 STYLING ========== */
+
+/* ========== START SECTION4 STYLING ========== */
+.section-4 {
+  margin-top: 30px;
+  margin-bottom: -50px;
+}
+
+.s4-form-header {
+  background-color: var(--main-color);
+  color: var(--white-color);
+  padding: 30px 0 80px;
+}
+
+.s4-form-header > h2 {
+  font-size: 28px;
+  font-weight: 400;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.s4-form-body {
+  width: 80%;
+  margin: 0 auto;
+  background-color: var(--white-color);
+  padding: 60px;
+  position: relative;
+  top: -45px;
+}
+
+.s4-form-body > form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.s4fb-form-leftSide,
+.s4fb-form-rightSide {
+  width: 50%;
+  padding: 20px 30px;
+}
+
+.s4fb-form-leftSide input,
+.s4fb-form-leftSide select {
+  width: 100%;
+  display: block;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.s4fb-form-leftSide input {
+  border: 1px solid #ced4da;
+  outline: none;
+}
+
+.s4fb-form-leftSide select {
+  outline: none;
+}
+
+.s4fb-form-leftSide input,
+.s4fb-form-leftSide select {
+  color: var(--text-grey-color);
+  font-size: 1.2rem;
+}
+
+.s4fb-form-leftSide input:focus {
+  border-color: var(--main-color);
+  box-shadow: 0 0 0 0.2rem #9933343b;
+}
+
+.s4fb-form-leftSide select:focus {
+  border-color: var(--main-color);
+  background-color: var(--white-color);
+  border-width: 2px;
+  border-radius: 3px;
+}
+
+.s4fb-form-rightSide label {
+  display: inline-block;
+  font-size: 1.2rem;
+  color: var(--text-grey-color);
+  margin: 20px 0;
+}
+
+.s4fb-form-rightSide textarea {
+  color: var(--text-grey-color);
+  font-size: 1.2rem;
+  border: 1px solid #ced4da;
+  outline: none;
+  padding: 15px;
+}
+
+.s4fb-form-rightSide textarea:focus {
+  border-color: var(--main-color);
+  box-shadow: 0 0 0 0.2rem #9933343b;
+}
+
+.s4-form-body > form button {
+  background: var(--main-color);
+  color: white;
+  font-size: 18px;
+  padding: 15px 40px;
+  width: 20%;
+  margin: 0 auto;
+  transition: 0.4s all;
+  text-transform: uppercase;
+  border: none;
+}
+
+.s4-form-body > form button:hover {
+  background-color: var(--main-color-btn-hover);
+  cursor: pointer;
+}
+
+.s4-form-footer {
+  background-color: var(--text-grey-color);
+  color: var(--white-color);
+  padding: 30px 0 80px;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 110px;
+  position: relative;
+  top: -90px;
+  z-index: -1;
+}
+
+.s4-form-footer .leftSide > h4 {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.s4-form-footer .leftSide > address {
+  font-weight: 300;
+  line-height: 1.6;
+  font-size: 17px;
+}
+
+.s4-form-footer .rightSide > p {
+  line-height: 1.8;
+  font-weight: 300;
+  font-size: 17px;
+}
+
+/* ========== END SECTION4 STYLING ========== */
+
+
+/* ========== START FOOTER STYLING ========== */
+
+footer {
+  text-align: center;
+}
+
+footer p {
+  color: var(--text-grey-color);
+}
+
+footer p a {
+  text-decoration: none;
+  color: var(--text-grey-color);
+}
+
+footer p a:hover {
+  text-decoration: underline;
+  color: var(--primary-price-color);
+}
+
+/* ========== END FOOTER STYLING ========== */
